@@ -65,7 +65,7 @@ app.post('/reset', async function (req, res){
           
             from:'harikaakshinthala97@gmail.com',
             //here i am passing the user mail id statically
-            to:'user@gmail.com',
+            to:'dummyuser1@gmail.com',
             
             subject: 'Sent Email using Node.js',
             text: `Copy this string : ${random_string}
