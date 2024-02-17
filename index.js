@@ -65,18 +65,18 @@ app.post('/reset', async function (req, res){
           
             from:'harikaakshinthala97@gmail.com',
             //here i am passing the user mail id statically
-            to:'dummyusermailid@gmail.com',
-            
+           // to:'dummyusermailid@gmail.com',
+            to:'harikaakshinthala1@gmail.com',
             subject: 'Sent Email using Node.js',
             text: `Copy this string : ${random_string}
-                    Open the link : https://clever-malabi-a145d2.netlify.app/reset1
+                    Open the link : https://day42task-frontend.vercel.app/reset1
             `        
           };
           
           transporter.sendMail(mailOptions, function(error, info){
             if (error) {
               console.log(error);
-            } else {
+            } else { 
               console.log('Email sent: ' + info.response);
             }
           });
