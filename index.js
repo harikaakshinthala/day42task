@@ -79,7 +79,7 @@ app.post('/reset', async function (req, res){
               console.log('Email sent: ' + info.response);
             }
           });
-        res.send({"msg": "An email is sent to you. Kindly check your mails"});
+        res.send({"msg": "An email is sent to you(i.e guvitask1@gmail.com). Kindly check your mails"});
     }else{
         res.send({"msg": "No such user exist"})
     }
